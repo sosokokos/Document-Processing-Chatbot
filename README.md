@@ -1,10 +1,8 @@
 # DocumentAI
-
-
 ## **Overview**
 AmedAI is a Python-based document processing and chatbot system that utilizes LangChain for text processing and OpenAI embeddings for similarity search. It integrates with Pinecone to store and query vectorized document chunks efficiently.
----
 
+---
 ## **Features**
 - Load PDF documents from local storage or online sources
 - Convert PDFs to text for processing
@@ -40,3 +38,35 @@ AmedAI is a Python-based document processing and chatbot system that utilizes La
 - The three most relevant chunks are retrieved and used as context in an OpenAI API request
 - The chatbot responds based on the retrieved document information
 - If no relevant data is found, the chatbot notifies the user
+
+---
+## **Technologies Used**
+- **Programming Language**: Python
+- **Database**: Pinecone (Vector Database)
+- **Libraries**:
+  - `langchain` – Text processing and embeddings
+  - `openai` – Embeddings and chatbot integration
+  - `pinecone` – Vector database storage and querying
+  - `unstructured` – PDF parsing and text extraction
+
+---
+## **Setup**
+
+### **1. Dependencies**
+Ensure Python is installed along with the required libraries. Install missing packages using:
+```
+pip install {Package}
+```
+
+### **2. API Key Configuration**
+You will need to configure your API Key for both OpenAI and Pinecone in both files:
+```
+OpenAiKey = "key123"
+PineconeKey = "key234"
+```
+
+### **3. Running the Code**
+Run the code by entering this into terminal:
+```
+python main.py
+```
